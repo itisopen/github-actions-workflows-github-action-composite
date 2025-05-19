@@ -20,16 +20,16 @@ tags:
 license: "APACHE2"
 
 # Canonical GitHub repo
-github_repo: cloudposse/github-actions-workflows-github-action-composite
+github_repo: itisopen/github-actions-workflows-github-action-composite
 
 # Badges to display
 badges:
   - name: "Latest Release"
-    image: "https://img.shields.io/github/release/cloudposse/github-actions-workflows-github-action-composite.svg"
-    url: "https://github.com/cloudposse/github-actions-workflows-github-action-composite/releases/latest"
+    image: "https://img.shields.io/github/release/itisopen/github-actions-workflows-github-action-composite.svg"
+    url: "https://github.com/itisopen/github-actions-workflows-github-action-composite/releases/latest"
   - name: "Slack Community"
-    image: "https://slack.cloudposse.com/badge.svg"
-    url: "https://slack.cloudposse.com"
+    image: "https://slack.itisopen.net/badge.svg"
+    url: "https://slack.itisopen.net"
 
 related: []
 
@@ -54,10 +54,10 @@ introduction: |-
 references:
   - name: "github-actions-workflows"
     description: "Reusable workflows for different types of projects"
-    url: "https://github.com/cloudposse/github-actions-workflows"
+    url: "https://github.com/itisopen/github-actions-workflows"
   - name: "github-action-docker-build-push"
     description: "Simple docker build action"
-    url: "https://github.com/cloudposse/github-action-docker-build-push"
+    url: "https://github.com/itisopen/github-action-docker-build-push"
 
 include:
   - "docs/github-actions-reusable-workflows.md"
@@ -66,3 +66,5 @@ include:
 contributors:
   - name: "Igor Rodionov"
     github: "goruha"
+  - name: "Patrice Lachance"
+    github: "patlachance"

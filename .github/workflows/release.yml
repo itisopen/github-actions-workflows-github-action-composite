@@ -32,5 +32,5 @@ concurrency:
 
 jobs:
   release:
-    uses: cloudposse/.github/.github/workflows/shared-release-branches.yml@main
+    uses: itisopen/.github/.github/workflows/shared-release-branches.yml@itisopen
     secrets: inherit

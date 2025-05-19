@@ -18,7 +18,7 @@ name: |-
   
     jobs:
       perform:
-        uses: cloudposse/github-actions-workflows-github-action-composite/.github/workflows/main-branch.yml@main
+        uses: itisopen/github-actions-workflows-github-action-composite/.github/workflows/main-branch.yml@itisopen
         with:
           organization: "$\{\{ github.event.repository.owner.login \}\}"
           repository: "$\{\{ github.event.repository.name \}\}"
@@ -63,7 +63,7 @@ concurrency:
 
 jobs:
   ci-readme:
-    uses: cloudposse/github-actions-workflows/.github/workflows/ci-readme.yml@main
+    uses: itisopen/github-actions-workflows/.github/workflows/ci-readme.yml@itisopen
     with:
       filter-mode: nofilter
       suggestions: false
@@ -71,7 +71,7 @@ jobs:
     secrets: inherit
 
   ci:
-    uses: cloudposse/github-actions-workflows/.github/workflows/ci-github-action.yml@main
+    uses: itisopen/github-actions-workflows/.github/workflows/ci-github-action.yml@itisopen
     with:
       organization: ${{ inputs.organization }}
       repository: ${{ inputs.repository }}
@@ -80,7 +80,7 @@ jobs:
 
   release:
     needs: [ ci, ci-readme ]
-    uses: cloudposse/.github/.github/workflows/shared-auto-release.yml@main
+    uses: itisopen/.github/.github/workflows/shared-auto-release.yml@itisopen
     with:
       publish: ${{ inputs.publish }}
     secrets: inherit
